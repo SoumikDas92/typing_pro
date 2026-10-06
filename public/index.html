@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en" data-theme="midnight">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Velora is a focused training world for lasting typing skill." />
+  <title>Velora — Build the skill</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="v2.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="app-shell">
+    <aside class="sidebar" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="Velora home">
+        <span class="brand-mark"><span></span><span></span><span></span></span>
+        <span>VELORA</span>
+      </a>
+      <nav id="desktop-nav">
+        <p class="nav-label">TRAIN</p>
+        <a class="nav-item active" href="#home" data-page="home"><i data-lucide="home"></i><span>Home</span></a>
+        <a class="nav-item" href="#journey" data-page="journey"><i data-lucide="map"></i><span>Journey</span><b>42%</b></a>
+        <a class="nav-item" href="#practice" data-page="practice"><i data-lucide="keyboard"></i><span>Practice</span></a>
+        <a class="nav-item" href="#challenges" data-page="challenges"><i data-lucide="swords"></i><span>Challenges</span><em>3</em></a>
+        <p class="nav-label">GROW</p>
+        <a class="nav-item" href="#stats" data-page="stats"><i data-lucide="chart-no-axes-combined"></i><span>Progress</span></a>
+        <a class="nav-item" href="#skills" data-page="skills"><i data-lucide="git-branch"></i><span>Skill tree</span></a>
+        <a class="nav-item" href="#achievements" data-page="achievements"><i data-lucide="medal"></i><span>Achievements</span></a>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="mini-goal">
+          <div class="ring small" style="--p:72"><span>72%</span></div>
+          <div><strong>Daily goal</strong><small>720 / 1,000 XP</small></div>
+        </div>
+        <a class="nav-item" href="#settings" data-page="settings"><i data-lucide="settings-2"></i><span>Settings</span></a>
+        <button class="profile-chip" id="sidebar-profile" aria-haspopup="menu" aria-expanded="false">
+          <span class="avatar user-initials">G</span><span><strong class="user-name">Guest</strong><small class="user-level">New learner</small></span><i data-lucide="chevron-right"></i>
+        </button>
+      </div>
+    </aside>
+
+    <main id="main" tabindex="-1">
+      <header class="topbar">
+        <button class="mobile-menu" aria-label="Open menu"><i data-lucide="menu"></i></button>
+        <div class="breadcrumb"><span id="greeting">Welcome back</span><small id="context-line">Preparing your training…</small></div>
+        <div class="top-actions">
+          <button class="streak-pill" aria-label="14 day streak"><i data-lucide="flame"></i><b>14</b><span>day streak</span></button>
+          <button class="icon-btn sound-toggle" aria-label="Toggle sounds"><i data-lucide="volume-2"></i></button>
+          <button class="icon-btn" aria-label="Notifications"><i data-lucide="bell"></i><span class="dot"></span></button>
+        </div>
+      </header>
+
+      <section id="home" class="page active" aria-labelledby="home-title">
+        <div class="hero reveal">
+          <div class="hero-shade"></div>
+          <div class="hero-content">
+            <span class="eyebrow"><i data-lucide="sparkles"></i> YOUR PATH CONTINUES</span>
+            <h1 id="home-title">Find your <em>flow.</em></h1>
+            <p>Your control is getting sharper. Today we'll turn accuracy into effortless speed.</p>
+            <div class="hero-actions">
+              <button class="btn primary start-session"><i data-lucide="play"></i> Continue journey</button>
+              <button class="btn ghost" data-page="journey"><i data-lucide="map"></i> View path</button>
+            </div>
+            <div class="hero-meta"><span><i data-lucide="clock-3"></i> 14 min</span><span><i data-lucide="crosshair"></i> Precision focus</span><span><i data-lucide="zap"></i> +280 XP</span></div>
+          </div>
+          <div class="chapter-tag"><span>CHAPTER 04</span><strong>Word Flow</strong><small>Lesson 3 of 8</small></div>
+        </div>
+
+        <div class="section-head reveal"><div><span class="kicker">TODAY'S FOCUS</span><h2>Your training, tuned to you</h2></div><button class="text-btn" data-page="practice">Browse all practice <i data-lucide="arrow-right"></i></button></div>
+        <div class="training-grid reveal">
+          <article class="session-card featured">
+            <div class="session-top"><span class="icon-box coral"><i data-lucide="waves"></i></span><span class="tag">RECOMMENDED</span></div>
+            <h3>Right-hand rhythm</h3><p>Smooth out the <b>O–P</b> transition without losing your pace.</p>
+            <div class="lesson-row"><span>01</span><div><b>Warm-up</b><small>Common pairs</small></div><em>2 min</em><i data-lucide="check"></i></div>
+            <div class="lesson-row current"><span>02</span><div><b>Precision drill</b><small>O · P · L focus</small></div><em>4 min</em><i data-lucide="play"></i></div>
+            <div class="lesson-row"><span>03</span><div><b>Flow challenge</b><small>Natural sentences</small></div><em>5 min</em><i data-lucide="lock-keyhole"></i></div>
+            <button class="btn primary full start-session">Begin 11-minute session <i data-lucide="arrow-right"></i></button>
+          </article>
+          <article class="coach-card">
+            <div class="card-head"><span><i data-lucide="orbit"></i> VELORA COACH</span><button aria-label="More"><i data-lucide="ellipsis"></i></button></div>
+            <div class="coach-orb"><span></span><span></span><i data-lucide="sparkles"></i></div>
+            <blockquote>“You're getting faster without giving up control.”</blockquote>
+            <p>Your accuracy held above <b>96%</b> for three sessions. The right pinky is now your biggest opportunity.</p>
+            <div class="coach-insight"><i data-lucide="trending-up"></i><span><b>+4 WPM</b><small>this week</small></span><i data-lucide="arrow-up-right"></i></div>
+          </article>
+          <article class="dna-card">
+            <div class="card-head"><span><i data-lucide="fingerprint"></i> TYPING DNA</span><button data-page="stats">Details</button></div>
+            <div class="dna-viz" aria-label="Typing DNA radar chart">
+              <svg viewBox="0 0 240 190" role="img"><g class="radar-grid"><path d="M120 15L217 72L180 175H60L23 72Z"/><path d="M120 45L187 84L161 145H79L53 84Z"/><path d="M120 72L158 94L143 121H97L82 94Z"/><path d="M120 15V175M23 72L180 175M217 72L60 175M23 72H217"/></g><path class="radar-shape" d="M120 28L194 84L162 151L73 157L44 78Z"/><g class="radar-points"><circle cx="120" cy="28" r="4"/><circle cx="194" cy="84" r="4"/><circle cx="162" cy="151" r="4"/><circle cx="73" cy="157" r="4"/><circle cx="44" cy="78" r="4"/></g></svg>
+              <span class="r speed">SPEED <b>82</b></span><span class="r precision">PRECISION <b>96</b></span><span class="r flow">FLOW <b>89</b></span><span class="r recovery">RECOVERY <b>78</b></span><span class="r balance">BALANCE <b>84</b></span>
+            </div>
+            <p class="dna-note"><i data-lucide="info"></i> Your profile favors precision and flow.</p>
+          </article>
+        </div>
+
+        <div class="metrics reveal">
+          <article><span class="metric-icon"><i data-lucide="gauge"></i></span><div><small>CURRENT SPEED</small><strong><span id="dash-wpm">58</span><em> WPM</em></strong><p><b>+4</b> from last week</p></div><svg class="spark" viewBox="0 0 120 40"><path d="M1 34C15 31 20 34 32 26S49 28 59 18 76 23 84 13 102 13 119 4"/></svg></article>
+          <article><span class="metric-icon"><i data-lucide="crosshair"></i></span><div><small>ACCURACY</small><strong><span id="dash-accuracy">96.4</span><em>%</em></strong><p><b>+1.2%</b> improving</p></div><svg class="spark" viewBox="0 0 120 40"><path d="M1 29C15 35 21 23 32 28S47 19 58 22 73 13 85 18 102 8 119 10"/></svg></article>
+          <article><span class="metric-icon"><i data-lucide="trophy"></i></span><div><small>PERSONAL BEST</small><strong><span id="dash-best">72</span><em> WPM</em></strong><p>Set 6 days ago</p></div><span class="badge-mini">TOP 18%</span></article>
+          <article><span class="metric-icon"><i data-lucide="timer-reset"></i></span><div><small>TRAINING TIME</small><strong>3<em>h</em> 42<em>m</em></strong><p>This month</p></div><div class="mini-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></article>
+        </div>
+
+        <div class="two-col reveal">
+          <article class="panel weekly"><div class="panel-title"><div><span class="kicker">WEEKLY PROGRESS</span><h3>Momentum is building</h3></div><span class="trend"><i data-lucide="trending-up"></i> 18% vs last week</span></div><div class="week-bars" id="week-bars"></div><div class="week-footer"><span><i></i> Practice time</span><b>4 of 5 days complete</b></div></article>
+          <article class="panel weak-keys"><div class="panel-title"><div><span class="kicker">KEY INSIGHTS</span><h3>Small gains, targeted</h3></div><button data-page="practice">Train these <i data-lucide="arrow-up-right"></i></button></div><div class="key-row"><kbd>P</kbd><div><b>Right pinky</b><span><i style="width:81%"></i></span></div><em>81%</em></div><div class="key-row"><kbd>Q</kbd><div><b>Left pinky</b><span><i style="width:86%"></i></span></div><em>86%</em></div><div class="key-row"><kbd>W</kbd><div><b>Left ring</b><span><i style="width:89%"></i></span></div><em>89%</em></div><p class="insight"><i data-lucide="lightbulb"></i><span><b>P accuracy improved 6%</b><br>Keep your wrist relaxed and reach, don't rotate.</span></p></article>
+        </div>
+
+        <div class="section-head reveal"><div><span class="kicker">RECENTLY UNLOCKED</span><h2>Milestones worth keeping</h2></div><button class="text-btn" data-page="achievements">View collection <i data-lucide="arrow-right"></i></button></div>
+        <div class="achievement-strip reveal">
+          <article><span class="medal gold"><i data-lucide="wind"></i></span><div><small>RARE · OCT 4</small><h3>Flow State</h3><p>90+ consistency for 3 sessions</p></div><b>+250 XP</b></article>
+          <article><span class="medal blue"><i data-lucide="target"></i></span><div><small>OCT 2</small><h3>Clean Run</h3><p>100 words without an error</p></div><b>+150 XP</b></article>
+          <article class="locked"><span class="medal"><i data-lucide="lock-keyhole"></i></span><div><small>72% COMPLETE</small><h3>Velocity</h3><p>Reach 65 WPM in a lesson</p></div><b>+300 XP</b></article>
+        </div>
+      </section>
+
+      <section id="journey" class="page subpage" aria-labelledby="journey-title"></section>
+      <section id="practice" class="page subpage" aria-labelledby="practice-title"></section>
+      <section id="challenges" class="page subpage" aria-labelledby="challenges-title"></section>
+      <section id="stats" class="page subpage" aria-labelledby="stats-title"></section>
+      <section id="skills" class="page subpage" aria-labelledby="skills-title"></section>
+      <section id="achievements" class="page subpage" aria-labelledby="achievements-title"></section>
+      <section id="profile" class="page subpage" aria-labelledby="profile-title"></section>
+      <section id="settings" class="page subpage" aria-labelledby="settings-title"></section>
+    </main>
+  </div>
+
+  <div class="profile-menu" id="profile-menu" role="menu" hidden>
+    <div class="menu-user"><span class="avatar user-initials">G</span><div><strong class="user-name">Guest</strong><small id="menu-email">Local progress</small></div></div>
+    <button role="menuitem" data-page="profile"><i data-lucide="user-round"></i> View profile</button>
+    <button role="menuitem" data-page="settings"><i data-lucide="settings-2"></i> Settings</button>
+    <hr>
+    <button role="menuitem" id="auth-action"><i data-lucide="log-in"></i> Sign in</button>
+  </div>
+
+  <nav class="mobile-nav" aria-label="Mobile navigation">
+    <button class="active" data-page="home"><i data-lucide="home"></i><span>Home</span></button><button data-page="journey"><i data-lucide="map"></i><span>Journey</span></button><button class="mobile-train start-session"><i data-lucide="play"></i></button><button data-page="stats"><i data-lucide="chart-no-axes-combined"></i><span>Stats</span></button><button data-page="profile"><i data-lucide="user-round"></i><span>Profile</span></button>
+  </nav>
+
+  <div class="auth-shell" id="auth-shell" role="dialog" aria-modal="true" aria-labelledby="auth-title" hidden>
+    <div class="auth-art" aria-hidden="true"><a class="brand"><span class="brand-mark"><span></span><span></span><span></span></span><span>VELORA</span></a><div><span class="kicker">YOUR JOURNEY, REMEMBERED</span><h2>Build a skill that stays with you.</h2><p>Focused training, measurable progress, one calm session at a time.</p></div><small>Accuracy → consistency → technique → speed</small></div>
+    <div class="auth-panel">
+      <button class="auth-close" aria-label="Close sign in"><i data-lucide="x"></i></button>
+      <div class="auth-form-wrap">
+        <span class="auth-logo"><span class="brand-mark"><span></span><span></span><span></span></span></span>
+        <span class="kicker" id="auth-kicker">WELCOME BACK</span>
+        <h1 id="auth-title">Continue your journey.</h1>
+        <p id="auth-subtitle">Sign in to keep your progress in one place.</p>
+        <div class="auth-tabs" role="tablist"><button class="active" data-auth-tab="login" role="tab">Sign in</button><button data-auth-tab="signup" role="tab">Create account</button></div>
+        <form id="auth-form" novalidate>
+          <label class="username-field" hidden><span>Username</span><input id="auth-username" name="username" autocomplete="nickname" minlength="2" maxlength="24" placeholder="What should we call you?"></label>
+          <label><span>Email</span><input id="auth-email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required></label>
+          <label><span>Password</span><input id="auth-password" name="password" type="password" autocomplete="current-password" minlength="8" placeholder="At least 8 characters" required></label>
+          <p class="auth-error" role="alert" hidden></p>
+          <button class="btn primary full auth-submit" type="submit"><span>Sign in</span><i data-lucide="arrow-right"></i></button>
+        </form>
+        <div class="auth-divider"><span>or</span></div>
+        <button class="google-btn"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M22.6 12.2c0-.7-.1-1.5-.2-2.2H12v4.3h6a5.2 5.2 0 0 1-2.2 3.3v2.8h3.6c2.1-2 3.2-4.8 3.2-8.2Z"/><path fill="#34A853" d="M12 23c3 0 5.5-1 7.4-2.6l-3.6-2.8c-1 .7-2.3 1-3.8 1-2.9 0-5.3-1.9-6.2-4.5H2.1V17A11.2 11.2 0 0 0 12 23Z"/><path fill="#FBBC05" d="M5.8 14.1a6.7 6.7 0 0 1 0-4.2V7H2.1a11.2 11.2 0 0 0 0 10l3.7-2.9Z"/><path fill="#EA4335" d="M12 5.4c1.6 0 3.1.6 4.3 1.7l3.2-3.2A10.8 10.8 0 0 0 2.1 7l3.7 2.9c.9-2.6 3.3-4.5 6.2-4.5Z"/></svg><span>Continue with Google</span></button>
+        <button class="guest-btn">Continue as guest</button>
+        <p class="auth-note">Guest progress stays on this device. Account sync requires a configured authentication provider.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="loading-screen" id="loading-screen" aria-live="polite"><div class="loader-mark"><span></span><span></span><span></span></div><p>Preparing your journey…</p><div class="skeleton-line"></div></div>
+
+  <div class="modal" id="typing-modal" role="dialog" aria-modal="true" aria-labelledby="exercise-title" hidden>
+    <div class="typing-screen">
+      <header class="typing-header"><a class="brand"><span class="brand-mark"><span></span><span></span><span></span></span><span>VELORA</span></a><div><span>WORD FLOW</span><b id="exercise-title">Right-hand rhythm</b></div><button class="close-modal" aria-label="Exit exercise"><i data-lucide="x"></i></button></header>
+      <div class="typing-progress"><i id="type-progress"></i></div>
+      <div class="live-stats"><span><small>WPM</small><b id="live-wpm">0</b></span><span><small>ACCURACY</small><b id="live-accuracy">100%</b></span><span><small>COMBO</small><b id="live-combo">0</b></span><span><small>TIME</small><b id="live-time">0:00</b></span></div>
+      <div class="typing-stage">
+        <p class="exercise-hint"><i data-lucide="crosshair"></i> Keep a steady rhythm. Accuracy comes first.</p>
+        <div id="typing-text" class="typing-text" aria-label="Text to type"></div>
+        <textarea id="typing-input" aria-label="Type the displayed text here" autocomplete="off" autocapitalize="off" spellcheck="false"></textarea>
+        <p class="input-hint"><kbd>click here and start typing</kbd><span>Press <kbd>Esc</kbd> to pause</span></p>
+        <div id="keyboard" class="keyboard" aria-label="On-screen keyboard"></div>
+      </div>
+      <footer class="typing-footer"><button class="keyboard-toggle"><i data-lucide="keyboard"></i> Hide keyboard</button><span><i data-lucide="volume-2"></i> Sound on</span><span>Lesson 3 of 8</span></footer>
+    </div>
+  </div>
+
+  <div class="modal" id="result-modal" role="dialog" aria-modal="true" aria-labelledby="result-title" hidden>
+    <div class="result-card"><button class="close-result" aria-label="Close"><i data-lucide="x"></i></button><div class="result-glow"></div><span class="result-check"><i data-lucide="check"></i></span><span class="eyebrow">SESSION COMPLETE</span><h2 id="result-title">Rhythm found.</h2><p>You stayed composed and turned precision into flow.</p><div class="result-score"><strong id="result-score">846</strong><span>TRAINING<br>SCORE</span></div><div class="result-grid"><div><small>WPM</small><b id="result-wpm">58</b></div><div><small>ACCURACY</small><b id="result-accuracy">96%</b></div><div><small>CONSISTENCY</small><b id="result-consistency">91</b></div><div><small>XP GAINED</small><b class="coral-text">+180</b></div></div><div class="result-insight"><i data-lucide="sparkles"></i><span><b>Your weakest key was P.</b><br>Next, a 3-minute P + O combination drill will help.</span></div><div class="result-actions"><button class="btn ghost retry-session"><i data-lucide="rotate-ccw"></i> Retry</button><button class="btn primary finish-session">Continue journey <i data-lucide="arrow-right"></i></button></div></div>
+  </div>
+
+  <div id="toast" role="status" aria-live="polite"></div>
+  <script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js"></script>
+  <script src="auth-provider.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
