@@ -10,6 +10,25 @@ python3 -m http.server 4173
 
 Open `http://localhost:4173`.
 
+## Cloudflare deployment
+
+The repository includes a deployment-ready `public/` directory and `wrangler.jsonc`. No framework build is required.
+
+### Cloudflare Workers / Wrangler
+
+```bash
+npx wrangler deploy
+```
+
+### Cloudflare dashboard with Git integration
+
+- Production branch: `arena/3d690ca4-typing-pro` until the pull request is merged into `main`
+- Build command: leave blank
+- Deploy command: `npx wrangler deploy`
+- Static asset directory: `public`
+
+The explicit asset configuration prevents Wrangler's “Could not detect a directory containing static files” error.
+
 ## Accounts and data
 
 Velora provides three modes:
